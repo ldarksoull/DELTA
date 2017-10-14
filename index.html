@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="ru-en">
+
 <head>
     <!-- Meta tags -->
     <meta charset="UTF-8">
@@ -15,8 +18,11 @@
     <link rel="shortcut icon" href="img/favicon/favicon.ico">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <!-- Fancybox -->
-    
+    <!--fancybox-->
+    <script src="lib/fancybox/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="lib/fancybox/jquery.fancybox.min.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Add CSS for preloader -->
     <style type="text/css">
         #hellopreloader>p {
@@ -235,7 +241,7 @@
             -webkit-appearance: none
         }
         
-         ::-webkit-file-upload-button {
+        ::-webkit-file-upload-button {
             -webkit-appearance: button;
             font: inherit
         }
@@ -298,8 +304,8 @@
         }
         
         *,
-         ::after,
-         ::before {
+        ::after,
+        ::before {
             box-sizing: inherit
         }
         
@@ -396,7 +402,7 @@
         }
         
         @media print,
-        screen and (min-width: 40em) {
+        screen and (min-width:40em) {
             .row .row {
                 margin-right: -.9375rem;
                 margin-left: -.9375rem
@@ -404,7 +410,7 @@
         }
         
         @media print,
-        screen and (min-width: 64em) {
+        screen and (min-width:64em) {
             .row .row {
                 margin-right: -.9375rem;
                 margin-left: -.9375rem
@@ -694,7 +700,7 @@
         }
         
         @media print,
-        screen and (min-width: 40em) {
+        screen and (min-width:40em) {
             .medium-1 {
                 -ms-flex: 0 0 8.33333%;
                 flex: 0 0 8.33333%;
@@ -874,7 +880,7 @@
         }
         
         @media print,
-        screen and (min-width: 40em) and (min-width: 40em) {
+        screen and (min-width:40em) and (min-width:40em) {
             .medium-expand {
                 -ms-flex: 1 1 0px;
                 flex: 1 1 0px
@@ -888,7 +894,7 @@
         }
         
         @media print,
-        screen and (min-width: 40em) {
+        screen and (min-width:40em) {
             .row.medium-unstack>.column,
             .row.medium-unstack>.columns {
                 -ms-flex: 1 1 0px;
@@ -897,7 +903,7 @@
         }
         
         @media print,
-        screen and (min-width: 40em) {
+        screen and (min-width:40em) {
             .medium-collapse>.column,
             .medium-collapse>.columns {
                 padding-right: 0;
@@ -911,7 +917,7 @@
         }
         
         @media print,
-        screen and (min-width: 64em) {
+        screen and (min-width:64em) {
             .large-1 {
                 -ms-flex: 0 0 8.33333%;
                 flex: 0 0 8.33333%;
@@ -1091,7 +1097,7 @@
         }
         
         @media print,
-        screen and (min-width: 64em) and (min-width: 64em) {
+        screen and (min-width:64em) and (min-width:64em) {
             .large-expand {
                 -ms-flex: 1 1 0px;
                 flex: 1 1 0px
@@ -1105,7 +1111,7 @@
         }
         
         @media print,
-        screen and (min-width: 64em) {
+        screen and (min-width:64em) {
             .row.large-unstack>.column,
             .row.large-unstack>.columns {
                 -ms-flex: 1 1 0px;
@@ -1114,7 +1120,7 @@
         }
         
         @media print,
-        screen and (min-width: 64em) {
+        screen and (min-width:64em) {
             .large-collapse>.column,
             .large-collapse>.columns {
                 padding-right: 0;
@@ -1253,7 +1259,7 @@
         }
         
         @media print,
-        screen and (min-width: 40em) {
+        screen and (min-width:40em) {
             .medium-order-1 {
                 -ms-flex-order: 1;
                 order: 1
@@ -1281,7 +1287,7 @@
         }
         
         @media print,
-        screen and (min-width: 64em) {
+        screen and (min-width:64em) {
             .large-order-1 {
                 -ms-flex-order: 1;
                 order: 1
@@ -1349,7 +1355,7 @@
         }
         
         @media print,
-        screen and (min-width: 40em) {
+        screen and (min-width:40em) {
             .medium-flex-container {
                 display: -ms-flexbox;
                 display: flex
@@ -1385,7 +1391,7 @@
         }
         
         @media print,
-        screen and (min-width: 64em) {
+        screen and (min-width:64em) {
             .large-flex-container {
                 display: -ms-flexbox;
                 display: flex
@@ -2121,32 +2127,31 @@
         loadCSS("css/libs.min.css?ver=1.0.0", false, "all")
 
     </script>
-    <link rel="stylesheet" href="css/libs.min.css?ver=1.0.0" media="all">
     <script>
         loadCSS("css/default.min.css?ver=1.0.0", false, "all")
 
     </script>
-    <link rel="stylesheet" href="css/default.min.css?ver=1.0.0" media="all">
     <script>
         loadCSS("css/header.min.css?ver=1.0.0", false, "all");
 
     </script>
-    <link rel="stylesheet" href="css/header.min.css?ver=1.0.0" media="all">
     <script>
         loadCSS("css/home/main.min.css?ver=1.0.0", false, "all");
 
     </script>
-    <link rel="stylesheet" href="css/home/main.min.css?ver=1.0.0" media="all">
     <script>
         loadCSS("css/footer.min.css?ver=1.0.0", false, "all")
 
     </script>
-    <link rel="stylesheet" href="css/footer.min.css?ver=1.0.0" media="all">
 
     <!-- Add CSS without JS -->
     <noscript>
-        &lt;link rel="stylesheet" href="css/fonts.min.css"&gt; &lt;link rel="stylesheet" href="css/libs.min.css"&gt; &lt;link rel="stylesheet" href="css/default.min.css"&gt; &lt;link rel="stylesheet" href="css/home/main.min.css"&gt; &lt;link rel="stylesheet" href="css/footer.min.css"&gt;
-    </noscript>
+        <link rel="stylesheet" href="css/fonts.min.css">
+        <link rel="stylesheet" href="css/libs.min.css">
+        <link rel="stylesheet" href="css/default.min.css">
+        <link rel="stylesheet" href="css/home/main.min.css">
+        <link rel="stylesheet" href="css/footer.min.css">
+	</noscript>
 </head>
 
 <body>
@@ -2158,8 +2163,7 @@
                     <img src="img/logo.svg" alt="Логотип">
                 </a>
             </div>
-            <button type="button" class="toggleButton"><i class="fa fa-bars" aria-hidden="true"></i>
-            </button>
+            <button type="button" class="toggleButton"><i class="fa fa-bars" aria-hidden="true"></i></button>
         </div>
         <div class="header__navigation">
             <div class="header__navigation__logo">
@@ -2169,17 +2173,14 @@
             </div>
             <nav class="header__navigation__links">
                 <ul>
-                    <li><a class="link" href="#">О нас</a>
-                    </li>
-                    <li><a class="link" href="portfolio.html">Портфолио</a>
-                    </li>
-                    <li><a class="link" href="#">Контакты</a>
-                    </li>
+                    <li><a class="link" href="#">О нас</a></li>
+                    <li><a class="link" href="portfolio.html">Портфолио</a></li>
+                    <li><a class="link" href="#">Контакты</a></li>
                 </ul>
             </nav>
         </div>
         <div class="header__content">
-            <h1 style="width: 635px; height: 100px;">Оффер, от которого нельзя откзаться</h1>
+            <h1>Оффер, от которого нельзя откзаться</h1>
             <p class="p--header">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac laoreet neque. Vestibulum fringilla ornare nisl, vel aliquet felis iaculis non. Nunc ut risus viverra, porttitor lacus quis, pharetra elit.
             </p>
@@ -2382,7 +2383,7 @@
                 </nav>
             </div>
             <div class="columns medium-6 small-12 footer__copy">
-                digital delta © 2017
+                digital delta &copy; 2017
             </div>
         </div>
     </footer>
@@ -2397,12 +2398,14 @@
     <script>
         var scr = {
             "scripts": [{
-                "src": "js/libs.min.js",
-                "async": false
-            }, {
-                "src": "js/home/main.min.js",
-                "async": false
-            }]
+                    "src": "js/libs.min.js",
+                    "async": false
+                },
+                {
+                    "src": "js/home/main.min.js",
+                    "async": false
+                }
+            ]
         };
         ! function(t, n, r) {
             "use strict";
@@ -2428,7 +2431,7 @@
 
     <!-- Add preloader -->
     <div id="hellopreloader">
-        <div id="hellopreloader_preload" style="opacity: 0.05; display: none;"></div>
+        <div id="hellopreloader_preload"></div>
     </div>
     <script type="text/javascript">
         var hellopreloader = document.getElementById("hellopreloader_preload");
@@ -2450,8 +2453,6 @@
         };
 
     </script>
-
-
-    <script src="js/libs.min.js"></script>
-    <script src="js/home/main.min.js"></script>
 </body>
+
+</html>
