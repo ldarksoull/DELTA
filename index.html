@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="img/favicon/favicon.ico">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
+    
     <!-- Add CSS for preloader -->
     <style type="text/css">
         #hellopreloader>p {
@@ -2349,13 +2349,20 @@
                 <div class="columns large-6 small-12 contacts__form">
                     <div class="inner">
                         <h3 class="form__title">Форма обратной связи</h3>
-                        <form action="feedback.php" method="post" class="feedback-form">
+                        <form action="feedback2.php" method="post" class="feedback-form">
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="Site Name">
+                            <input type="hidden" name="admin_email" value="ldarksoull@yandex.ru">
+                            <input type="hidden" name="form_subject" value="Feedback">
+                            <!-- END Hidden Required Fields -->
                             <input type="text" id="userName" placeholder="ВАШЕ ИМЯ" name="userName" required>
                             <input type="email" id="userEmail" placeholder="EMAIL" name="userEmail" required>
                             <input type="tel" id="userTel" placeholder="МОБ. ТЕЛЕФОН" name="userTel">
-                            <button class="btn btn--form" type="submit">Отправить</button>
+                            <button class="btn btn--form" id="feedback" type="submit">Отправить</button>
                         </form>
+                        
                     </div>
+
                 </div>
             </div>
         </section>
@@ -2391,7 +2398,8 @@
 	<![endif]-->
 
     <!-- Add JS files -->
-       <script>
+    <script>
+        
         var scr = {
             "scripts": [{
                     "src": "js/libs.min.js",
@@ -2400,7 +2408,12 @@
                 {
                     "src": "js/home/main.min.js",
                     "async": false
+                },
+                 {
+                    "src": "js/home/feedback.js",
+                    "async": false
                 }
+                  
             ]
         };
         ! function(t, n, r) {
