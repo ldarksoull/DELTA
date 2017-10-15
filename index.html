@@ -237,7 +237,7 @@
             -webkit-appearance: none
         }
         
-        ::-webkit-file-upload-button {
+         ::-webkit-file-upload-button {
             -webkit-appearance: button;
             font: inherit
         }
@@ -300,8 +300,8 @@
         }
         
         *,
-        ::after,
-        ::before {
+         ::after,
+         ::before {
             box-sizing: inherit
         }
         
@@ -2349,9 +2349,9 @@
                 <div class="columns large-6 small-12 contacts__form">
                     <div class="inner">
                         <h3 class="form__title">Форма обратной связи</h3>
-                        <form action="#">
-                            <input type="text" id="userName" placeholder="ВАШЕ ИМЯ" name="userName">
-                            <input type="email" id="userEmail" placeholder="EMAIL" name="userEmail">
+                        <form action="feedback.php" method="post" class="feedback-form">
+                            <input type="text" id="userName" placeholder="ВАШЕ ИМЯ" name="userName" required>
+                            <input type="email" id="userEmail" placeholder="EMAIL" name="userEmail" required>
                             <input type="tel" id="userTel" placeholder="МОБ. ТЕЛЕФОН" name="userTel">
                             <button class="btn btn--form" type="submit">Отправить</button>
                         </form>
@@ -2391,7 +2391,6 @@
 	<![endif]-->
 
     <!-- Add JS files -->
-    <script>
         var scr = {
             "scripts": [{
                     "src": "js/libs.min.js",
