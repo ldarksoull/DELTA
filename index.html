@@ -2350,15 +2350,10 @@
                     <div class="inner">
                         <h3 class="form__title">Форма обратной связи</h3>
                         <form method="post" class="feedback-form">
-                            <!-- Hidden Required Fields -->
-                            <input type="hidden" name="project_name" value="Site Name">
-                            <input type="hidden" name="admin_email" value="ldarksoull@yandex.ru">
-                            <input type="hidden" name="form_subject" value="Feedback">
-                            <!-- END Hidden Required Fields -->
                             <input type="text" id="userName" placeholder="ВАШЕ ИМЯ" name="userName" required>
                             <input type="email" id="userEmail" placeholder="EMAIL" name="userEmail" required>
                             <input type="tel" id="userTel" placeholder="МОБ. ТЕЛЕФОН" name="userTel">
-                            <button class="btn btn--form" id="feedback" type="submit">Отправить</button>
+                            <button class="btn btn--form" id="feedback" type="submit" onclick="Click()">Отправить</button>
                         </form>
                         
                     </div>
@@ -2416,6 +2411,17 @@
                   
             ]
         };
+        
+                function Click() {
+            $.ajax({
+                type: "post",
+                url: "feedback.php",
+                data: $(".feedback-form").serialize(),
+                success: function(html) {
+                    alert("Success!");
+            }
+            });
+        }
         ! function(t, n, r) {
             "use strict";
             var c = function(t) {
